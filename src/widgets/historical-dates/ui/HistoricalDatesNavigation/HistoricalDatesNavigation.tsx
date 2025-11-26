@@ -43,7 +43,7 @@ export const HistoricalDatesNavigation = (props: THistoricalDatesNavigationProps
 				</StyledNavigationButton>
 				<StyledNavigationButton
 					onClick={() => onClickNextEventPoint()}
-					disabled={currentEventPoint === totalEvents}
+					disabled={currentEventPoint === totalEvents - 1}
 				>
 					<StyledNavigationArrowIcon
 						src={NavigationArrowImage}
