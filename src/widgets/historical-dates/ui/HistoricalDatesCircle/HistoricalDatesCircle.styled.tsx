@@ -21,10 +21,6 @@ export const HistoricalDatesCircleWrapper = styled.div`
 		transform: translateY(-50%);
   }
 
-	@media (max-width: 1024px) {
-		overflow: hidden;
-	}
-
 	@media (max-width: 767px) {
 		display: none;
 	}
@@ -39,7 +35,7 @@ export const HistoricalDatesCircleImage = styled.div < { mainCircleRotationAngle
 	width: 530px;
 	height: 530px;
 	border-radius: 50%;
-	transform: rotate(-${props => props.mainCircleRotationAngle}deg);
+	transform: rotate(-${props => props.mainCircleRotationAngle}deg) translateZ(0);
 	transition: transform 0.6s ease-in;
 	border: 1px solid rgba(66, 86, 122, 0.2);
 	box-sizing: border-box;
