@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 import { historicalEvents } from "../../../shared/constants/historical-data";
@@ -24,6 +24,24 @@ export const HistoricalDatesContainer = () => {
 	const [startDateEvent, setStartDateEvent] = useState<number>(historicalEvents[0].events[0].year);
 	const [endDateEvent, setEndDateEvent] = useState<number>(historicalEvents[0].events[historicalEvents[0].events.length - 1].year);
 	const [mainCircleRotationAngle, setmainCircleRotationAngle] = useState(0);
+	const [diameter, setDiameter] = useState(DIAMETER);
+
+	useEffect(() => {
+		const handleResize = () => {
+			if (window.innerWidth <= 900 && window.innerWidth >= 768) {
+				console.log('window.innerWidth: ', window.innerWidth);
+				setDiameter(430);
+			} else {
+				setDiameter(530);
+			}
+		};
+
+		handleResize();
+		window.addEventListener("resize", handleResize);
+
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
 
 	const animateDatesOfEvents = (timePeriodIndex: number) => {
 		const currentPeriodEvents = historicalEvents[timePeriodIndex].events;
@@ -92,7 +110,7 @@ export const HistoricalDatesContainer = () => {
 				endDateEventRef={endDateEventRef}
 			/>
 			<HistoricalDatesCircle
-				cicrleDiameter={DIAMETER}
+				cicrleDiameter={diameter}
 				numOfPoints={numOfPoints}
 				activeEventPoint={activeEventPoint}
 				historicalEvents={historicalEvents}

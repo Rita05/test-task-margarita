@@ -54,10 +54,9 @@ export const HistoricalDatesCircle = ({
 	onChangeEventPoint
 }: THistoricalDatesCircleProps) => {
 
-
 	const initialEventsPointsPosition: TEventsPointsPosition = useMemo(
 		() => initializeEventsPointsPosition(numOfPoints, cicrleDiameter),
-		[numOfPoints]
+		[numOfPoints, cicrleDiameter]
 	);
 
 
