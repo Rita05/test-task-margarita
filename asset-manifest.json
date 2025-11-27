@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/test-task-margarita/static/css/main.1dd7a2f9.css",
+    "main.js": "/test-task-margarita/static/js/main.3ddd882e.js",
+    "static/js/453.66b90038.chunk.js": "/test-task-margarita/static/js/453.66b90038.chunk.js",
+    "static/media/PTSans-Bold.ttf": "/test-task-margarita/static/media/PTSans-Bold.610bc32a7e32c292ce59.ttf",
+    "static/media/PTSans-Regular.ttf": "/test-task-margarita/static/media/PTSans-Regular.77e92507394e2309d837.ttf",
+    "static/media/PTSans-Bold.woff2": "/test-task-margarita/static/media/PTSans-Bold.4e1974633f8126b20e54.woff2",
+    "static/media/PTSans-Regular.woff2": "/test-task-margarita/static/media/PTSans-Regular.a3a3486bacf6a72eee3b.woff2",
+    "static/media/PTSans-Regular.eot": "/test-task-margarita/static/media/PTSans-Regular.63701ea242b4e1366461.eot",
+    "static/media/PTSans-Bold.eot": "/test-task-margarita/static/media/PTSans-Bold.5e10b7b772dec8ed8872.eot",
+    "static/media/BebasNeue-Regular.ttf": "/test-task-margarita/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "static/media/BebasNeue-Regular.eot": "/test-task-margarita/static/media/BebasNeue-Regular.93b558f3e619d1cf3c97.eot",
+    "static/media/BebasNeue-Regular.woff2": "/test-task-margarita/static/media/BebasNeue-Regular.8eefcd4284319e1eb4ca.woff2",
+    "index.html": "/test-task-margarita/index.html",
+    "static/media/nav-arrow.svg": "/test-task-margarita/static/media/nav-arrow.0de95fc221c30b35e0a4ae95d70dbaa5.svg",
+    "main.1dd7a2f9.css.map": "/test-task-margarita/static/css/main.1dd7a2f9.css.map",
+    "main.3ddd882e.js.map": "/test-task-margarita/static/js/main.3ddd882e.js.map",
+    "453.66b90038.chunk.js.map": "/test-task-margarita/static/js/453.66b90038.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1dd7a2f9.css",
+    "static/js/main.3ddd882e.js"
+  ]
+}
