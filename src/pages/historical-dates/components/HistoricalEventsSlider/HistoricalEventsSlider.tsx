@@ -6,7 +6,7 @@ import { Navigation } from 'swiper/modules';
 import { v4 as uuidv4 } from 'uuid';
 
 import { SwiperWrapper, SwiperButtonNext, SwiperButtonPrev, SwiperComponent, SwiperSlideContent, SwiperSlideDescription, SwiperSlideYear, SwiperEventTitle } from "./HistoricalEventsSlider.styled";
-import { THistoricalEvents } from '../../../../shared/constants/historical-data';
+import { THistoricalEvents } from '../../../../data/constants/historical-data';
 import { useEffect, useRef, useState } from 'react';
 
 type THistoricalEventsSliderProps = {

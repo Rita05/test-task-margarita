@@ -1,6 +1,6 @@
 
 import { RefObject, useMemo } from "react";
-import { THistoricalEvents } from "../../../../shared/constants/historical-data";
+import { THistoricalEvents } from "../../../../data/constants/historical-data";
 import {
 	HistoricalDatesCircleEvent,
 	HistoricalDatesCircleEventTitle,

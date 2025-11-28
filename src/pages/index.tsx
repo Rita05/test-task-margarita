@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
-import { historicalEvents } from "../../../shared/constants/historical-data";
-import { HistoricalEventsSlider } from "./HistoricalEventsSlider/HistoricalEventsSlider";
-import { HistoricalDatesRange } from "./HistoricalDatesRange/HistoricalDatesRange";
-import { HistoricalDatesNavigation } from "./HistoricalDatesNavigation/HistoricalDatesNavigation";
-import { HistoricalEventsPagination } from "./HistoricalEventsPagination.tsx/HistoricalEventsPagination";
-import { HistoricalDatesCircle } from "./HistoricalDatesCircle/HistoricalDatesCircle";
+import { historicalEvents } from "../data/constants/historical-data";
+import { HistoricalEventsSlider } from "./historical-dates/components/HistoricalEventsSlider/HistoricalEventsSlider";
+import { HistoricalDatesRange } from "./historical-dates/components/HistoricalDatesRange/HistoricalDatesRange";
+import { HistoricalDatesNavigation } from "./historical-dates/components/HistoricalDatesNavigation/HistoricalDatesNavigation";
+import { HistoricalEventsPagination } from "./historical-dates/components/HistoricalEventsPagination.tsx/HistoricalEventsPagination";
+import { HistoricalDatesCircle } from "./historical-dates/components/HistoricalDatesCircle/HistoricalDatesCircle";
 
 import { HistoricalDatesTitle, HistoricalDatesSection, VerticalLeftLine, VerticalRightLine } from "./index.styled";
 
@@ -28,7 +28,7 @@ export const HistoricalDatesContainer = () => {
 
 	useEffect(() => {
 		const handleResize = () => {
-			if (window.innerWidth <= 900 && window.innerWidth >= 768) {
+			if (window.innerWidth <= 1024 && window.innerWidth >= 768) {
 				setDiameter(430);
 			} else {
 				setDiameter(530);

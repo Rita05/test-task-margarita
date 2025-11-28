@@ -1,4 +1,4 @@
-import NavigationArrowImage from '../../../../shared/assets/icons/nav-arrow.svg';
+import NavigationArrowImage from '../../../../assets/icons/nav-arrow.svg';
 
 import { StyledNavigationArrowIcon, StyledNavigationButton, StyledNavigationButtonsGroup, StyledNavigationContainer, StyledNavigationPoints } from "./HistoricalDatesNavigation.styled"
 

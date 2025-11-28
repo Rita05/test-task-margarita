@@ -1,23 +1,24 @@
 @font-face {
   font-family: Bebas Neue;
-  src: url(./shared/fonts/BebasNeue-Regular.eot) format('eot'),
-  url(./shared/fonts/BebasNeue-Regular.ttf) format('truetype'),
-  url(./shared/fonts/BebasNeue-Regular.woff2) format('woff2')
+  src: url(./assets/fonts/BebasNeue-Regular.eot) format('eot'),
+  url(./assets/fonts/BebasNeue-Regular.ttf) format('truetype'),
+  url(./assets/fonts/BebasNeue-Regular.woff2) format('woff2')
 }
 
 @font-face {
   font-family: PT Sans;
-  src: url(./shared/fonts/PTSans-Regular.eot) format('eot'),
-  url(./shared/fonts/PTSans-Regular.ttf) format('truetype'),
-  url(./shared/fonts/PTSans-Regular.woff2) format('woff2')
+  src: url(./assets/fonts/PTSans-Regular.eot) format('eot'),
+  url(./assets/fonts/PTSans-Regular.ttf) format('truetype'),
+  url(./assets/fonts/PTSans-Regular.woff2) format('woff2')
 }
 
 @font-face {
   font-family: PT Sans Bold;
-  src: url(./shared/fonts/PTSans-Bold.eot) format('eot'),
-  url(./shared/fonts/PTSans-Bold.ttf) format('truetype'),
-  url(./shared/fonts/PTSans-Bold.woff2) format('woff2')
+  src: url(./assets/fonts/PTSans-Bold.eot) format('eot'),
+  url(./assets/fonts/PTSans-Bold.ttf) format('truetype'),
+  url(./assets/fonts/PTSans-Bold.woff2) format('woff2')
 }
+
 
 body {
   margin: 0;

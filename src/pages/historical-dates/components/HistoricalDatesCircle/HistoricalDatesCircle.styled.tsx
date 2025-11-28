@@ -1,6 +1,20 @@
 import { styled } from "styled-components";
 import { TEventsPointsPosition } from "./HistoricalDatesCircle";
 
+type THistoricalDatesCirclePointProps = {
+	numOfPoints: number;
+	pointIndex: number;
+	isActive: boolean;
+	position: TEventsPointsPosition;
+	rotationAngle: number;
+	index: number;
+}
+
+type THistoricalDatesCircleEventProps = Pick<
+	THistoricalDatesCirclePointProps,
+	"isActive" | "pointIndex" | "numOfPoints"
+>;;
+
 export const HistoricalDatesCircleWrapper = styled.div`
 	display: flex;
 	justify-content: center;
@@ -21,7 +35,7 @@ export const HistoricalDatesCircleWrapper = styled.div`
 		transform: translateY(-50%);
   }
 
-	@media (max-width: 900px) and (min-width: 768px){
+	@media (max-width: 1024px) and (min-width: 768px){
 		display: block;
 		left: 50%;
 		transform: translateX(-50%);
@@ -46,7 +60,7 @@ export const HistoricalDatesCircleImage = styled.div < { mainCircleRotationAngle
 	border: 1px solid rgba(66, 86, 122, 0.2);
 	box-sizing: border-box;
 
-	@media (max-width: 900px) and (min-width: 768px){
+	@media (max-width: 1024px) and (min-width: 768px){
 		width: 430px;
 		height: 430px;
 		left: 50%;
@@ -54,7 +68,7 @@ export const HistoricalDatesCircleImage = styled.div < { mainCircleRotationAngle
 	}
 `
 
-export const HistoricalDatesCirclePoint = styled.div<{ numOfPoints: number, pointIndex: number, isActive: boolean, position: TEventsPointsPosition, rotationAngle: number, index: number }>`
+export const HistoricalDatesCirclePoint = styled.div<THistoricalDatesCirclePointProps>`
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -81,7 +95,7 @@ export const HistoricalDatesCirclePointEvent = styled.div`
 		cursor: pointer;
 		visibility: visible;
 	`
-export const HistoricalDatesCircleEvent = styled.div<{ numOfPoints: number, pointIndex: number, isActive: boolean }>`
+export const HistoricalDatesCircleEvent = styled.div<THistoricalDatesCircleEventProps>`
 		position: relative;
 		width: ${(props) => (props.isActive ? '56px' : '6px')};
   	height: ${(props) => (props.isActive ? '56px' : '6px')};

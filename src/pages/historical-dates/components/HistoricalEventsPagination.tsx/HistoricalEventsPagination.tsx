@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { THistoricalEvents } from "../../../../shared/constants/historical-data";
+import { THistoricalEvents } from "../../../../data/constants/historical-data";
 import { HistoricalEventsPaginationButton, HistoricalEventsPaginationContainer } from "./HistoricalEventsPagination.styled";
 
 type THistoricalEventsPaginationProps = {
