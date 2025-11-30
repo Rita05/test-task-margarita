@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 
 export const HistoricalDatesRangeContainer = styled.div`
 	position: relative;
-	z-index: 1;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
@@ -20,6 +19,12 @@ export const HistoricalDatesRangeContainer = styled.div`
 	@media (max-width: 1024px) {
 		justify-content: center;
 		padding-right: 0;
+	}
+
+	@media (max-width: 900px) and (min-width: 768px){
+		margin-top: 65px;
+		font-size: 130px;
+		letter-spacing: -3.2px;
 	}
 
 	@media (max-width: 767px) {

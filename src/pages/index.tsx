@@ -28,7 +28,7 @@ export const HistoricalDatesContainer = () => {
 
 	useEffect(() => {
 		const handleResize = () => {
-			if (window.innerWidth <= 1024 && window.innerWidth >= 768) {
+			if (window.innerWidth <= 900 && window.innerWidth >= 768) {
 				setDiameter(430);
 			} else {
 				setDiameter(530);

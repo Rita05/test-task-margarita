@@ -35,7 +35,7 @@ export const HistoricalDatesCircleWrapper = styled.div`
 		transform: translateY(-50%);
   }
 
-	@media (max-width: 1024px) and (min-width: 768px){
+	@media (max-width: 900px) and (min-width: 768px){
 		display: block;
 		left: 50%;
 		transform: translateX(-50%);
@@ -60,7 +60,7 @@ export const HistoricalDatesCircleImage = styled.div < { mainCircleRotationAngle
 	border: 1px solid rgba(66, 86, 122, 0.2);
 	box-sizing: border-box;
 
-	@media (max-width: 1024px) and (min-width: 768px){
+	@media (max-width: 900px) and (min-width: 768px){
 		width: 430px;
 		height: 430px;
 		left: 50%;
@@ -101,7 +101,6 @@ export const HistoricalDatesCircleEvent = styled.div<THistoricalDatesCircleEvent
   	height: ${(props) => (props.isActive ? '56px' : '6px')};
 		top: 50%;
 		left: 50%;
-		z-index: 5;
 		transform: translate(-50%, -50%);
 		display: flex;
 		justify-content: center;
@@ -136,7 +135,6 @@ export const HistoricalDatesCircleEventTitle = styled.span<{ isActive: boolean }
 		line-height: 30px;
 		text-align: left;
 		position: absolute;
-		z-index: 5;
 		left: 80px;
 		opacity: ${(props) => props.isActive ? 1 : 0};
 		visibility: ${(props) => props.isActive ? 'visible' : 'hidden'};
